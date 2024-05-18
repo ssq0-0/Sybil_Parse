@@ -48,10 +48,10 @@ Make sure you have GO installed:
       (for open file in terminal use **nano "filename"**)
   ```go
   	searchStrings := []string{
-		  "<b>you_wallet_1</b>",
-      "<b>you_wallet_2</b>",
-      "<b>you_wallet_3</b>",
-      "<b>you_wallet_4</b>",
+		  "you_wallet_1",
+      "you_wallet_2",
+      "you_wallet_3",
+      "you_wallet_4",
 	}
   ```
   
