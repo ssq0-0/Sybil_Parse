@@ -112,7 +112,6 @@ func main() {
 			fmt.Printf("Found in Issue #%d\n", issue.Number)
 			fmt.Printf("Matching string: %s\n", result.SearchString)
 			fmt.Printf("Title: %s\n", issue.Title)
-			fmt.Printf("Body: %s\n", issue.Body)
 			fmt.Println("---------------------------------")
 		}
 	}
