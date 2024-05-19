@@ -58,7 +58,7 @@ Make sure you have GO installed:
 - Change **githubToken** to your real token
 - Start script:
   ```
-  go run main.go
+  go run parseGH.go
   
   ```
 
