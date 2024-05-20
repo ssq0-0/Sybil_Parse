@@ -70,7 +70,10 @@ func fetchIssues(page int, wg *sync.WaitGroup, results chan<- Result) {
 	}
 
 	for _, issue := range issues {
+		body := strings.ToLower(issue.Body)
+		title := strings.ToLower(issue.Title)
 		for _, searchString := range searchStrings {
+			searchString = strings.ToLower(searchString)
 			if strings.Contains(issue.Title, searchString) || strings.Contains(issue.Body, searchString) {
 				results <- Result{Issue: issue, SearchString: searchString}
 				break
